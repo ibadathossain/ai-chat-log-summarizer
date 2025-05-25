@@ -15,9 +15,17 @@ def load_chat(file_path):
         print(f"File '{file_path}' not found.")
     return user_msgs , ai_msgs
 
+def show_stats(user_msgs, ai_msgs):
+    total = len(user_msgs) + len(ai_msgs)
+    print("\n--- Message Stats ---")
+    print(f"Total messages exchanged: {total}")
+    print(f"User messages: {len(user_msgs)}")
+    print(f"AI messages: {len(ai_msgs)}")
+
 if __name__ == "__main__":
     user_msgs, ai_msgs = load_chat("chat.txt")
     print("User Messages:", user_msgs)
     print("AI Messages:", ai_msgs)
+    show_stats(user_msgs, ai_msgs)
 
   
