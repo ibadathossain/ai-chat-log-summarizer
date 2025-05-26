@@ -26,5 +26,13 @@ This Python script reads a '.txt' chat log between a user and an AI, processes t
    python chat_summarizer.py
 4. Sample Output:
    ![Sample Output](screenshot.png)
+5.Technologies Used
+   (i)Python 3
+
+   (ii)Regular Expressions (re)
+
+   (iii)collections.Counter for keyword frequency
+
+
 
 
